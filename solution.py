@@ -7,3 +7,5 @@ donors = [['B1', 'Rh+', 'Mary'], ['B3', 'Rh-', 'Dean'], ['B2', 'Rh-', 'Ragnar'],
 
 non_ideal_couple = [[donor, recipient] for donor in donors for recipient in recipients if donor[0] == recipient[0]]
 ideal_couple = [couple for couple in non_ideal_couple if couple[0][1] == couple[1][1]]
+
+print(ideal_couple)
